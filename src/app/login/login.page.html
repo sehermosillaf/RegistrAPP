@@ -1,0 +1,49 @@
+<ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title></ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content class="topbar-logo">
+    <ion-icon class="line" name="reorder-two-outline"></ion-icon>
+    <ion-icon class="qr-logo" name="qr-code-outline" size="large"></ion-icon>
+    <ion-icon class="line" name="reorder-two-outline"></ion-icon>
+   
+  </ion-card-content>
+  <div class="title">
+    <h3 >RegistrApp</h3>
+  </div>
+</ion-card>
+
+<ion-card>
+  <ion-item>
+    <form  #form="ngForm">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+
+            <div padding>
+              <ion-item>
+                <ion-input  name="name" type="text" placeholder="user" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="password" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button class="btn-signin" size="16px" shape="round" type="submit" [disabled]="form.invalid" expand="block" (click)="signIn()">Ingresar</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-item>
+
+</ion-card>
+
+<ion-card class="forgot-pass">
+  <ion-item href="#" class="ion-activated">
+    <ion-label>Olvidaste tu contraseña?</ion-label>
+  </ion-item>
+</ion-card>
+</ion-content>

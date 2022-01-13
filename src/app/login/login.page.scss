@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+}
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.qr-logo {
+  align-self: center;
+}
+.line {
+  padding: 0 30px;
+  font-size: 20px;
+  align-items: center;
+}
+.forgot-pass {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-signin {
+  margin-top: 30px;
+}
