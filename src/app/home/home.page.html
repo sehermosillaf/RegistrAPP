@@ -8,12 +8,10 @@
 
 <ion-content [fullscreen]="true">
   <!-- Datetime in popover with cover element -->
-  <ion-datetime>
-    
-  </ion-datetime>
+  <ion-datetime readonly display-format="DD/MM/YYYY" locale="cl-CL" [(ngModel)]="myDate"></ion-datetime>
   
   <div class="btn-registarAsistencia">
-    <ion-button (click)="goToCamera()" color="warning" shape="round" expand="block">Registrar Asistencia <ion-icon class="camara-icon" name="camera-outline"></ion-icon></ion-button>
+    <ion-button (click)="getDate()" color="warning" shape="round" expand="block">Registrar Asistencia <ion-icon class="camara-icon" name="camera-outline"></ion-icon></ion-button>
     
   </div>
 
