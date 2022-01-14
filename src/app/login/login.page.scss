@@ -1,22 +1,26 @@
-.title {
-  text-align: center;
-  color: #FFB800;
-  font-weight: 16px;
+//global
+
+.main-container {
+  --ion-background-color: #0a263e;
+  font-family: Poppins;
 }
+ion-input {
+  --placeholder-color: rgb(252, 248, 248);
+  --color: rgb(252, 248, 248);
+}
+ion-card {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+// Logo
+
 .topbar-logo {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 4rem;
 }
-ion-input {
-  --placeholder-color: rgb(252, 248, 248);
-}
-
-.forgot-pass-text{
-  color: #eeee;
-}
-
 .qr-logo {
   align-self: center;
   color: rgb(199, 186, 186);
@@ -25,20 +29,40 @@ ion-input {
   padding: 0 30px;
   font-size: 20px;
   align-items: center;
-  color:rgb(228, 222, 222)
+  color: rgb(228, 222, 222);
 }
 
-
+.title h3 {
+  font-weight: bold;
+  text-align: center;
+  color: #ffb800;
+}
 
 .btn-signin {
+  font-weight: bold;
   margin-top: 30px;
+  --background: #ffb800;
 }
 
-.container{
-  --ion-background-color: #0A263E
+// olvisate tu contraseña
+.pass-recovery {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  padding: 0 30px;
+  box-shadow: none !important;
+  border: none !important;
+  --background: #d8cfcf;
+}
+.pass-recovery-text {
+  color: #eeee;
+  font-weight: light;
 }
 
-.user-logo {
+//ion-icons
+
+.input-icon {
   color: rgb(219, 208, 208);
-  
+  display: flex;
+  padding-right: 20px;
 }
