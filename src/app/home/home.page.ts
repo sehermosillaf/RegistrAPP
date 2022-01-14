@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { IonDatetime } from '@ionic/angular';
 import { format, parseISO } from 'date-fns';
 @Component({
   selector: 'app-home',
