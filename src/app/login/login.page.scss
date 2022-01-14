@@ -1,5 +1,7 @@
 .title {
   text-align: center;
+  color: #FFB800;
+  font-weight: 16px;
 }
 .topbar-logo {
   display: flex;
@@ -7,20 +9,36 @@
   justify-content: center;
   padding-top: 4rem;
 }
+ion-input {
+  --placeholder-color: rgb(252, 248, 248);
+}
+
+.forgot-pass-text{
+  color: #eeee;
+}
 
 .qr-logo {
   align-self: center;
+  color: rgb(199, 186, 186);
 }
 .line {
   padding: 0 30px;
   font-size: 20px;
   align-items: center;
+  color:rgb(228, 222, 222)
 }
-.forgot-pass {
-  display: flex;
-  justify-content: center;
-}
+
+
 
 .btn-signin {
   margin-top: 30px;
+}
+
+.container{
+  --ion-background-color: #0A263E
+}
+
+.user-logo {
+  color: rgb(219, 208, 208);
+  
 }
