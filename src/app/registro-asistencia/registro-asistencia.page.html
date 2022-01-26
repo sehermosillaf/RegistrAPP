@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>registro-asistencia</ion-title>
+    <ion-title>Registros</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
@@ -9,4 +9,16 @@
 
 <ion-content>
 
+  <ion-list *ngIf="asistencia">
+    <ion-item *ngFor="let i of asistencia">
+      <ion-label>
+
+        <h2>Fecha:{{i.fecha}}</h2>
+        <h2>EstudianteID:{{i.rut_estudiante}}</h2>
+        <h2>AsignaturaID:{{i.id_asignatura}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="listarAsistencias()">Ver Registros</ion-button>
 </ion-content>

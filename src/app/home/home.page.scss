@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+ion-toolbar {
+  --ion-background-color: rgb(25, 73, 112);
+}
+
 .btn-registarAsistencia {
   margin: 0 5%;
 }
@@ -38,3 +42,4 @@
   margin: 0 auto;
   width: 40%;
 }
+

@@ -1,0 +1,42 @@
+<ion-content class="main-container">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="login"></ion-back-button>
+      </ion-buttons>
+      <ion-title class="toolbar-title">Recuperar Contraseña</ion-title>
+
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-card>
+    <ion-grid>
+      <form>
+        <ion-grid>
+          <ion-row>
+            <ion-item>
+
+              <ion-input name="name" type="text" placeholder="rut">
+                <ion-icon class="input-icon" class="input-icon" name="person-circle-outline"></ion-icon>
+              </ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="contraseña" type="password" placeholder="contraseña actual">
+                <ion-icon class="input-icon" name="lock-closed" class="input-icon"></ion-icon>
+              </ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-button class="btn-submit" size="16px" shape="round" expand="block">nueva contraseña
+                <ion-icon name="caret-forward"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-row>
+        </ion-grid>
+      </form>
+    </ion-grid>
+  </ion-card>
+
+</ion-content>

@@ -44,9 +44,18 @@
     </ion-item>
   </ion-card>
 
-  <div class="pass-recovery">
-    <ion-button size="small" expand="block" fill="none" [disabled]="">
-      Olvidaste la contraseña <ion-icon name="help-circle-sharp"></ion-icon>
+  <div class="new-account">
+    <ion-button size="small" expand="block" fill="none" shape="round" (click)="newUser()">
+      Crear Cuenta <ion-icon class="bottom-icon" name="add-circle-outline">
+      </ion-icon>
     </ion-button>
   </div>
+  <div class="pass-recovery">
+    <ion-button class="bottom-icon btn-password" size="small" expand="block" fill="none" shape="round" [disabled]=""
+      (click)="passwordRecovery()">
+      Olvidaste la contraseña <ion-icon class="bottom-icon" name="help-circle-outline">
+      </ion-icon>
+    </ion-button>
+  </div>
+
 </ion-content>

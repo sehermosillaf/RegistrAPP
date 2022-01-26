@@ -1,14 +1,6 @@
-import {
-  Component,
-  OnInit
-} from "@angular/core";
-import {
-  NavigationExtras,
-  Router
-} from "@angular/router";
-import {
-  ApiLoginService
-} from "../services/api-login.service";
+import { Component, OnInit } from "@angular/core";
+import { NavigationExtras, Router } from "@angular/router";
+import { ApiServices } from "../services/api-services.service";
 
 @Component({
   selector: "app-login",
@@ -16,7 +8,7 @@ import {
   styleUrls: ["./login.page.scss"],
 })
 export class LoginPage implements OnInit {
-  constructor(public router: Router, public api: ApiLoginService) {}
+  constructor(public router: Router, public api: ApiServices) {}
 
   username: any;
   password: any;
@@ -43,11 +35,13 @@ export class LoginPage implements OnInit {
       });
   }
 
-  // login() {
+  newUser() {
+    this.router.navigate(["/crear-cuenta"]);
+  }
 
-  //   console.log(this.username);
-  //   console.log(this.password);
-  // }
+  passwordRecovery() {
+    this.router.navigate(["/nueva-pass"]);
+  }
 
   //  form = new FormGroup({
   //   username: new FormControl('', Validators.required),

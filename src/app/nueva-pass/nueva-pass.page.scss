@@ -1,0 +1,32 @@
+.main-container {
+    --ion-background-color: #0a263e;
+    
+}
+
+ion-input {
+    --placeholder-color: rgb(252, 248, 248);
+    --color: rgb(252, 248, 248);
+}
+
+ion-card {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.input-icon {
+    display: flex;
+    padding-right: 10px;
+}
+
+.toolbar-title {
+    --color: rgb(252, 248, 248);
+}
+
+ion-back-button {
+    color: #fff;
+}
+
+.btn-submit {
+    --background: #e4b643;
+    --color: rgb(26, 25, 25);
+}

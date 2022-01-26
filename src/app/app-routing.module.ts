@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'registro-asistencia',
     loadChildren: () => import('./registro-asistencia/registro-asistencia.module').then( m => m.RegistroAsistenciaPageModule)
   },
+  {
+    path: 'crear-cuenta',
+    loadChildren: () => import('./crear-cuenta/crear-cuenta.module').then( m => m.CrearCuentaPageModule)
+  },
+  {
+    path: 'nueva-pass',
+    loadChildren: () => import('./nueva-pass/nueva-pass.module').then( m => m.NuevaPassPageModule)
+  },
 ];
 
 @NgModule({

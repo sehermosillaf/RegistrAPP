@@ -42,22 +42,19 @@ ion-card {
   font-weight: bold;
   margin-top: 30px;
   --background: #ffb800;
+  --color: rgb(26, 25, 25);
 }
 
 // olvisate tu contraseña
 .pass-recovery {
   display: flex;
   justify-content: center;
-  margin-top: 7rem;
+  padding-top: 7rem;
   padding: 0 30px;
   box-shadow: none !important;
   border: none !important;
-  --background: #d8cfcf;
 }
-.pass-recovery-text {
-  color: #eeee;
-  font-weight: light;
-}
+
 
 //ion-icons
 
@@ -66,3 +63,23 @@ ion-card {
   display: flex;
   padding-right: 20px;
 }
+
+// bottom input icons
+.bottom-icon {
+  display: flex;
+  margin-left: 4px;
+}
+.btn-password {
+  --background: #76e47b;
+  --color: rgb(29, 28, 28);
+}
+
+.new-account {
+  display: flex;
+  justify-content: center;
+  padding-top:5rem;
+  box-shadow: none !important;
+  border: none !important;
+  --background: #e4b643;
+}
+
